@@ -1,2 +1,3 @@
 # sugandanrg.github.io
-My website
+
+Zappos Challenge. Built purely on HTML5, CSS3 and JS.
