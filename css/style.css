@@ -751,6 +751,21 @@ textarea:hover {
   box-sizing: border-box;
 }
 
+@media (min-width: 328px) and (max-width: 548px) {
+	.close{
+width: 10% !important;}
+  }
+
+	@media (min-width: 549px) and (max-width: 740px) {
+		.close{
+	width: 7% !important;}
+	  }
+
+		@media (min-width: 740px) and (max-width: 988px) {
+			.close{
+		width: 6% !important;}
+		  }
+
 
 a {
   color: #fff;
@@ -765,6 +780,35 @@ a {
   padding: 0;
   clear: both;
 } */
+
+.cd-modal-content h2{
+	color:#ff005a !important;
+	font-size: 1.5vw;
+	z-index:12;
+}
+
+
+.llama{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 20vw;
+	height: 43vw;
+	z-index:5;
+}
+.port .row .description h4{
+	color:#ff005a !important;
+	font-weight: bolder;
+	font-size: 2.2vw;
+}
+
+.myself p {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+	font-weight: lighter;
+}
+
 .row img {
   max-width: 100%;
   height: auto;
@@ -891,6 +935,10 @@ a {
   transition-delay: 0.5s;
 }
 
+.myself{
+	z-index:12;
+}
+
 .close {
   width: 4%;
   height: 84%;
@@ -910,4 +958,65 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+/*Fact*/
+
+#container-fact p{
+	width:100%;
+	margin:2% 10%;
+	padding: 20px;
+	width:50%;
+		z-index:12;
+}
+#container-fact h2{
+	text-align:center;
+	color:#045;
+	z-index:12;
+}
+
+#quoteContainer{
+	width:100%;
+	padding:10px;
+	text-align: center;
+	font-size:2vw;
+	z-index:12;
+}
+
+#quoteButton{
+	position: relative;
+	width:auto;
+	margin-top: .5vw;
+	margin-left: 13vw;
+	border:2px solid #46b8da;
+	color:#045;
+	font-family: inherit;
+	font-weight: bold;
+	padding:5px;
+	text-decoration: none;
+	text-align: center;
+	z-index:12;
+}
+
+#quoteButton:hover{
+	cursor:pointer;
+	background:#09c;
+	color: #fff;
+	z-index:12;
+}
+#quoteButton:active{
+	cursor: pointer;
+	z-index:12;
+}
+#quoteButton{
+	display: inline-block;
+	z-index:12;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:760px){
+	#quoteButton,#addNew{
+		display: block;
+	}
 }
